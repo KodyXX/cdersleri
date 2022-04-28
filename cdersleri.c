@@ -9,6 +9,7 @@ int main()
     adim3: guvenlik (); // While ve scanf komutları ile kullanıcıdan bilgi almak için tanımlama yapıyoruz
     adim4: dogumyili (); //Bilgi alıp for ile döngü kuracağız
     adim5: kareHesapla (); // Parametreli fonksiyon çağırma
+    adim6: vizefinalhesapla (); // Vize ve Final Notumuzu Hesaplamak
 
 
 
@@ -134,3 +135,51 @@ int kareFcn(int sayi)
     int sonuc=sayi*sayi;
     return sonuc;
 }
+
+
+void vizefinalhesapla ()
+
+ {
+
+  int vize , final; //Tanımını Yapıyoruz
+  float ortalama; //Ortalama
+
+  printf ("Vize ve Final Notunuzu Hesaplama \n"); // Ekrana Vize ve Final Notunuzu Hesaplama Diye Mesaj Veriyoruz
+  printf ("Vize Notunuzu Giriniz: \n");           // Vize Notunuzu Giriniz Diye Mesaj Veriyoruz
+  scanf ("%d",&vize);                             // scanf Komutu ile yazılan değeri vize olarak tanımlıyoruz
+  printf ("Final Notunuzu Giriniz: \n");          // Final Notunuzu Giriniz Diye Mesaj Veriyoruz
+  scanf ("%d",&final);                            // scanf Komutu ile yazılan değeri final olarak tanımlıyoruz
+
+
+    ortalama = (vize * 0.4) + (final * 0.6);      // Ortalamanın Vizede %40 Finalde İse %60'ını Alsın Diye Tanımlıyoruz
+
+    printf ("Ders Ortalamanız = %f \n ",ortalama); // Ekrana Ders Ortalamanızı Hesaplayan Mesajı Veriyoruz
+
+    if (ortalama > 50)                             // Ortalamayı 50 Olarak Alsın Diye if İle Tanımlama Yapıyoruz
+
+    {
+
+      printf ("Dersten Geçtiniz. \n");             // Ekrana Dersten Geçtiniz Diye Mesaj Veriyoruz
+
+
+
+}
+
+else                                               // Eğer komutu
+
+{
+
+
+
+    printf ("\a Dersten Kaldınız. \n");          // Ekrana Dersten Kaldınız Diye Mesaj Veriyoruz
+
+
+}
+
+
+
+
+
+
+
+ }
